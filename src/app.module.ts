@@ -18,7 +18,7 @@ import { AppointmentController } from './appointment/appointment.controller';
       entities: [Appointment],
       synchronize: true,
       ssl: {
-        rejectUnauthorized: false, // Altere conforme necessário
+        rejectUnauthorized: false, 
       },
     }),
     TypeOrmModule.forFeature([Appointment]),

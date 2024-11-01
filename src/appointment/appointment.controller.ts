@@ -1,4 +1,3 @@
-// src/appointment/appointment.controller.ts
 import { Controller, Post, Body } from '@nestjs/common';
 import { AppointmentService } from './appointment.service';
 

@@ -8,10 +8,9 @@ export class WebhookController {
   constructor() {
     console.log('WebhookController inicializado');
   }
-  
+
   @Post('whatsapp')
   async handleWhatsAppMessage(@Body() body: any) {
-    // Logando o corpo da mensagem recebida
     console.log('Webhook chamado:', JSON.stringify(body, null, 2));
     
     const messageType = body?.messages?.[0]?.type;
